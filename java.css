@@ -1,0 +1,146 @@
+.calculator_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3edf7;
+}
+.calculator_frame{
+    width: 300px;
+    height: 90%;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
+    padding: 5px  10px;
+    border: 2px solid;
+    background: silver;
+}
+
+.calculator_name{
+    text-align: right;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.answer{
+    text-align: right;
+    color: #F8FAFC;
+    font-family: sans-serif;
+    font-size: 28px;
+}
+
+.calculator_screen{
+    width: 100%;
+    height: 120px;
+    background: teal;
+    padding: 2px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.calculator_screen.off{
+    background: black;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.calculator_btn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 70%;
+}
+.calculator_btn button{
+    width: 23%;
+    height: 40px;
+    border:none ;
+    background: #38BDF8;
+    font-weight: 900;
+    /* color: #F8FAFC; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border-radius:5px ;
+}
+
+.calculator_btn button:disabled:active{
+    background: initial;
+    transform: initial;
+}
+
+.calculator_btn button:active{
+    transform: translate(-1px, -1px);
+    background: #ccc;
+}
+.equalSign{
+    width: 100% !important;
+}
+
+.btn.bkspace{
+    background:#EF4444;
+}
+
+.off .typing{
+    animation: 2s welcome linear;
+    font-size: 28px;
+    position: relative;
+}
+
+@keyframes welcome{
+    0%{
+        left: -100px;
+    }
+    100%{
+        left: 100%;
+    }
+
+}
+
+.calculator_screen.on{
+    background: black;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* what we did here is kinda a mistake*/
+.on .typing{
+    animation: 2s Goodbye linear;
+    font-size: 28px;
+    position: relative;
+}
+
+@keyframes Goodbye{
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 100%;
+    }
+
+}
+
+.on_btn{
+    background-color: #00E676 !important;
+}
+.off_btn{
+    background: #B91C1C !important;
+}
+.typing{
+    color: #F8FAFC;
+    font-family: sans-serif;
+}
+.number{
+    background: #334155 !important;
+}
+.equalSign{
+    background-color: #22C55E !important;
+}
+.clear{
+    background: #F97316 !important;
+}
+
+
