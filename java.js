@@ -102,6 +102,7 @@ Turnon.onclick = function(){
 
 Turnoff.onclick = function(){
     typing.innerText = 'Goodbye!';
+    answer.innerText = "";
     calcscreen.classList.add('on')
     let nibtn = document.querySelectorAll('.ni');
 
@@ -112,7 +113,7 @@ Turnoff.onclick = function(){
         
         calcscreen.classList.remove('on');
         // calcscreen.innerText= ""
-        typing.innerText = "";
+        calcscreen.innerText = "";
         Turnon.disabled = false;
         Turnoff.disabled = true;
 
