@@ -113,9 +113,10 @@ Turnoff.onclick = function(){
         
         calcscreen.classList.remove('on');
         // calcscreen.innerText= ""
-        calcscreen.innerText = "";
+        // calcscreen.innerText = "";
         Turnon.disabled = false;
         Turnoff.disabled = true;
+        typing.innerText = '';
 
     }, 2000);         
 }
